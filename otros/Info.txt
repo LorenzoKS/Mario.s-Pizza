@@ -3,7 +3,7 @@ Mario's Pizza
 
 ---Reparto de trabajo---
 Index - Lorenzo
-Ubicacion - Lorenzo
+Ubicacion - Lorenzo ??
 Menu - Brath
 Reservas - Brath
 Galeria - Lorenzo
