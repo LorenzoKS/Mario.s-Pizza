@@ -1,0 +1,15 @@
+---Nombre Restaurante---
+Mario's Pizza
+
+---Reparto de trabajo---
+Index - Lorenzo
+Ubicacion - Lorenzo
+Menu - Brath
+Reservas - Brath
+Galeria - Lorenzo
+
+---Boceto de la web---
+app.uizard.io
+
+---Paleta de colores---
+color.adobe.com
