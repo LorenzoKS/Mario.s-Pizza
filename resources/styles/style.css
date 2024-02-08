@@ -20,6 +20,12 @@ header {
 
 ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    margin: 1rem;
 }
 
 nav {
@@ -27,10 +33,9 @@ nav {
 }
 
 .logo {
-    min-width: 100px;
-    min-height: 100px;
-    max-width: 150px;
-    max-height: 150px;
+
+    width: 150px;
+    height: 150px;
 }
 
 .menu-principal {
@@ -38,4 +43,19 @@ nav {
 }
 .menu-secundario {
     width: 20vw;
+    margin: 1rem;
 }
+.icono {
+    width: 25px;
+    height: 25px;
+}
+
+@media only screen and (max-width: 767px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+  }
