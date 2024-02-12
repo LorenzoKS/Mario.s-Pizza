@@ -121,14 +121,10 @@ ul {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 25vh;
+        height: 30vh;
     }
 
     .icono {
-        display: none;
-    }
-
-    .fondo-negro {
         display: none;
     }
 
@@ -140,5 +136,16 @@ ul {
         display: none;
     }
 
-    .version-movil {}
+    .version-pc {
+        display: none;
+    }
+
+    .version-movil {
+        display: block;
+        visibility: visible;
+    }
+
+    video {
+        width: 100vw;
+    }
 }
