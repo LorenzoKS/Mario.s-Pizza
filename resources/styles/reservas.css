@@ -1,6 +1,130 @@
+:root {
+    --rojo: #DC0000;
+    --rojo-oscuro: #780206;
+    --azul: #0550FF;
+    --azul-oscuro: #0000C8;
+    --blanco: #FFFFFF;
+  }
+
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: var(--blanco);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+
+header {
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--rojo);
+    border-bottom: 10px solid var(--rojo-oscuro);
+}
+
+.fondo-negro {
+    width: 100vw;
+    max-height: 80vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+video {
+    width: 100vw;
+    z-index: -1;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+nav {
+    display: flex;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centrar-logo {
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 125px;
+    height: 125px;
+}
+
+.menu-principal {
+    width: 60vw;
+}
+
+.espaciado {
+    margin: 1rem;
+}
+
+.menu-secundario {
+    min-width: 20vw;
+    justify-content: center;
+}
+
+.icono {
+    width: 25px;
+    height: 25px;
+    margin: .5rem;
+    cursor: pointer;
+}
+/* 
+@media only screen and (max-width: 767px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+} */
+
+form {
+    width: 35vw;
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2em;
+    border: #780206 solid 0.8em;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+div {
+    padding-bottom: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azul);
+}
