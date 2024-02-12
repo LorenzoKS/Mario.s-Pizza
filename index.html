@@ -15,17 +15,20 @@
 
 <body>
     <header>
-        <span class="centrar-logo">
+        <a href="index.html" class="centrar-logo">
             <img src="resources/images/Mario_sPIZZA.webp" alt="Logo Mario's PIZZA" class="logo">
-            <h2>Mario's Pizza</h2>
-        </span>
+        </a>
+        <h2 class="titulo">Mario's Pizza</h2>
         <nav>
             <ul class="menu-principal">
-                <li class="espaciado"><a href="#">Inicio</a></li>
-                <li class="espaciado"><a href="#">Menu</a></li>
-                <li class="espaciado"><a href="#">Galeria</a></li>
-                <li class="espaciado"><a href="#">Reserva</a></li>
+                <li class="espaciado inicio"><a href="#">Inicio</a></li>
+                <li class="espaciado"><a href="public/menu.html">Menu</a></li>
+                <li class="espaciado"><a href="public/galeria.html">Galeria</a></li>
+                <li class="espaciado"><a href="public/reservas.html">Reserva</a></li>
+                <li class="espaciado ubicacion"><a href="public/ubicacion.html">Ubicacion</a></li>
             </ul>
+        </nav>
+        <nav>
             <ul class="menu-secundario">
                 <li><img src="resources/images/instagram.png" alt="Icono usuario" class="icono"></li>
                 <li><img src="resources/images/twitter.png" alt="Icono usuario" class="icono"></li>
@@ -34,12 +37,13 @@
         </nav>
     </header>
     <section class="fondo-negro">
-        <video autoplay muted loop
-         src="resources/images/video-Pizza.mp4">
+        <video autoplay muted loop src="resources/images/video-Pizza.mp4" class="version-pc">
+        </video>
+        <video autoplay muted loop src="resources/images/video-Pizza.mp4" class="version-movil">
         </video>
     </section>
     <main>
-        
+
     </main>
     <footer>
 
