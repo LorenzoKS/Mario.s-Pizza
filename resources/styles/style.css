@@ -70,6 +70,10 @@ ul {
     align-items: center;
 }
 
+h3 {
+    color: black;
+}
+
 .centrar-logo {
     width: 20vw;
     display: flex;
@@ -113,6 +117,18 @@ ul {
 
 .ubicacion {
     display: none;
+}
+
+.boton {
+    background-color: transparent;
+    border: .1rem solid var(--azul-oscuro);
+    color: var(--azul-oscuro);
+    padding: .5rem;
+}
+
+.boton:hover {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
 }
 
 @media only screen and (max-width: 767px) {
