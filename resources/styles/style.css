@@ -4,6 +4,9 @@
     --azul: #0550FF;
     --azul-oscuro: #0000C8;
     --blanco: #FFFFFF;
+    --dorado: #FFD700;
+    --gris: #808080;
+    --negro: #222222;
 }
 
 * {
@@ -38,12 +41,6 @@ section {
     overflow: hidden;
 }
 
-.fondo-negro {
-    width: 100vw;
-    max-height: 80vh;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
 video {
     width: 100vw;
     z-index: -1;
@@ -58,6 +55,10 @@ a {
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
+}
+
+p {
+    color: var(--blanco);
 }
 
 nav {
@@ -111,24 +112,65 @@ h3 {
     align-items: center;
 }
 
-.version-movil {
-    display: none;
-}
-
 .ubicacion {
     display: none;
 }
 
 .boton {
     background-color: transparent;
-    border: .1rem solid var(--azul-oscuro);
-    color: var(--azul-oscuro);
+    border: .1rem solid var(--rojo-oscuro);
+    color: var(--rojo-oscuro);
     padding: .5rem;
 }
 
 .boton:hover {
-    background-color: var(--azul-oscuro);
+    background-color: var(--rojo-oscuro);
     color: var(--blanco);
+}
+
+.portada {
+    display: flex;
+    width: 100vw;
+    height: 70vh;
+}
+
+.img-izq {
+    width: 40vw;
+    background-color: var(--rojo);
+    padding: 3rem;
+}
+
+.img-drch {
+    background-image: url(../images/pizza.jpg);
+    width: 60vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:  4rem;
+}
+
+span {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.great {
+    color: var(--dorado);
+}
+
+.good {
+    color: var(--negro);
+}
+
+.in {
+    color: var(--gris);
 }
 
 @media only screen and (max-width: 767px) {
@@ -150,15 +192,6 @@ h3 {
 
     .inicio {
         display: none;
-    }
-
-    .version-pc {
-        display: none;
-    }
-
-    .version-movil {
-        display: block;
-        visibility: visible;
     }
 
     video {
