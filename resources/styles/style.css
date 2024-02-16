@@ -26,6 +26,14 @@ h6 {
     font-weight: 600;
 }
 
+.justificado {
+    text-align: justify;
+}
+
+.espaciado {
+    margin: 1rem;
+}
+
 header {
     height: 15vh;
     display: flex;
@@ -71,8 +79,18 @@ ul {
     align-items: center;
 }
 
-h3 {
-    color: black;
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5vw;
+    line-height: 1;
+}
+
+span {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .centrar-logo {
@@ -91,9 +109,6 @@ h3 {
     width: 60vw;
 }
 
-.espaciado {
-    margin: 1rem;
-}
 
 .menu-secundario {
     min-width: 20vw;
@@ -126,13 +141,13 @@ h3 {
 
 .boton:hover {
     background-color: var(--dorado);
-    color: var(--blanco);
+    color: var(--negro);
 }
 
 .portada {
     display: flex;
     width: 100vw;
-    height: 70vh;
+    height: 85vh;
 }
 
 .img-izq {
@@ -150,19 +165,6 @@ h3 {
     background-position: center;
 }
 
-h1 {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size:  5vw;
-    line-height: 1;
-}
-
-span {
-    font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
 .great {
     color: var(--dorado);
@@ -175,13 +177,15 @@ span {
 .in {
     color: var(--gris);
 }
+
 .mario {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size:  2rem;
+    font-size: 2rem;
     color: var(--dorado);
 }
+
 .casa {
     font-size: 2rem;
     color: var(--negro);
@@ -190,26 +194,50 @@ span {
 .contenido-secundario {
     display: flex;
     max-width: 100vw;
-    min-height: 60vh;
+    height: 60vh;
     justify-content: center;
     align-items: center;
     background-color: var(--azul);
 }
+
 .contenido-secundario-izq {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     width: 20vw;
     height: 60vh;
 }
+
 .pizzero {
     width: 40vw;
     padding: 4rem;
 }
 
-.contenido-secundario-izq > h3, p {
+.contenido-secundario-izq>h3,
+p {
     margin-bottom: 1rem;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100vw;
+    min-height: 70vh;
+    background-color: var(--azul-oscuro);
+    align-items: center;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.carta>img {
+    width: 25rem;
+    max-width: 100%;
 }
 
 @media only screen and (max-width: 767px) {
