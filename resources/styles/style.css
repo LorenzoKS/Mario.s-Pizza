@@ -26,10 +26,6 @@ h6 {
     font-weight: 600;
 }
 
-.justificado {
-    text-align: justify;
-}
-
 .espaciado {
     margin: 1rem;
 }
@@ -40,18 +36,6 @@ header {
     justify-content: space-between;
     background-color: var(--rojo);
     border-bottom: 10px solid var(--rojo-oscuro);
-}
-
-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-video {
-    width: 100vw;
-    z-index: -1;
 }
 
 ul {
@@ -200,60 +184,6 @@ address {
     color: var(--dorado);
 }
 
-.casa {
-    font-size: 2rem;
-    color: var(--negro);
-}
-
-.contenido-secundario {
-    display: flex;
-    max-width: 100vw;
-    height: 60vh;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--azul);
-}
-
-.contenido-secundario-izq {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 20vw;
-    height: 60vh;
-}
-
-.pizzero {
-    width: 40vw;
-    padding: 4rem;
-}
-
-.contenido-secundario-izq>h3,
-p {
-    margin-bottom: 1rem;
-}
-
-.contenedor {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 100vw;
-    min-height: 70vh;
-    background-color: var(--azul-oscuro);
-    align-items: center;
-}
-
-.fila {
-    display: flex;
-    justify-content: space-around;
-    width: 100vw;
-}
-
-.carta>img {
-    width: 25rem;
-    max-width: 100%;
-}
-
 .redes-sociales {
     width: 20vw;
     display: flex;
@@ -262,27 +192,5 @@ p {
 }
 
 @media only screen and (max-width: 767px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 30vh;
-    }
 
-    .icono {
-        display: none;
-    }
-
-    .ubicacion {
-        display: flex;
-    }
-
-    .inicio {
-        display: none;
-    }
-
-    video {
-        width: 100vw;
-    }
 }
