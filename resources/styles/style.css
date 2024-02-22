@@ -135,6 +135,7 @@ address {
     color: var(--dorado);
     padding: .5rem;
     border-radius: .1rem;
+    transition: 0.4s ease;
 }
 
 .boton:hover {
@@ -184,11 +185,195 @@ address {
     color: var(--dorado);
 }
 
+<<<<<<< HEAD
+=======
+.casa {
+    font-size: 2rem;
+    color: var(--negro);
+}
+
+.contenido-secundario {
+    display: flex;
+    max-width: 100vw;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--azul);
+}
+
+.contenido-secundario-izq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 60vh;
+}
+
+.pizzero {
+    width: 40vw;
+    padding: 4rem;
+}
+
+.contenido-secundario-izq>h3,
+p {
+    margin-bottom: 1rem;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100vw;
+    min-height: 70vh;
+    background-color: var(--azul-oscuro);
+    align-items: center;
+}
+
+.row {
+    display: flex;
+}
+
+.carta>img {
+    width: 25rem;
+    max-width: 100%;
+}
+
+>>>>>>> 40d37155cb0d5d4bd19d08a69b5b170ea381a248
 .redes-sociales {
     width: 20vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+.titulo-anuncio {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.giant {
+    color: var(--dorado);
+}
+
+.promos {
+    color: var(--rojo);
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.seccion-secundaria {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    background-color: var(--azul-oscuro);
+    font-size: 3rem;
+}
+
+.portada-uno {
+    width: 30vw;
+    height: 22rem;
+    margin-right: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/portada-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: .2rem solid var(--rojo);
+}
+
+.portada-dos {
+    width: 30vw;
+    height: 22rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/portada-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: .2rem solid var(--rojo);
+}
+
+.portada-uno>p {
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+.portada-dos>p {
+    font-size: 1.2rem;
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+.pizza {
+    color: var(--rojo);
+}
+
+.good-dos {
+    color: var(--dorado);
+}
+
+.people {
+    color: var(--rojo);
+}
+
+
+
+
+
+
+.contenido-principal {
+    width: 100vw;
+    height: 50vh;
+}
+
+.anuncio-uno {
+    width: 25%;
+    height: 13rem;
+    background-image: url(../images/anuncio-uno.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.anuncio-dos {
+    width: 10rem;
+    height: 10rem;
+    background-image: url(../images/anuncio-dos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.anuncio-tres {
+    width: 10rem;
+    height: 10rem;
+    background-image: url(../images/anuncio-tres.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.anuncio-cuatro {
+    width: 10rem;
+    height: 13rem;
+    background-image: url(../images/anuncio-cuatro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-grow: 1;
 }
 
 @media only screen and (max-width: 767px) {
