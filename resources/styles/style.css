@@ -185,61 +185,6 @@ address {
     color: var(--dorado);
 }
 
-<<<<<<< HEAD
-=======
-.casa {
-    font-size: 2rem;
-    color: var(--negro);
-}
-
-.contenido-secundario {
-    display: flex;
-    max-width: 100vw;
-    height: 60vh;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--azul);
-}
-
-.contenido-secundario-izq {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 20vw;
-    height: 60vh;
-}
-
-.pizzero {
-    width: 40vw;
-    padding: 4rem;
-}
-
-.contenido-secundario-izq>h3,
-p {
-    margin-bottom: 1rem;
-}
-
-.contenedor {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 100vw;
-    min-height: 70vh;
-    background-color: var(--azul-oscuro);
-    align-items: center;
-}
-
-.row {
-    display: flex;
-}
-
-.carta>img {
-    width: 25rem;
-    max-width: 100%;
-}
-
->>>>>>> 40d37155cb0d5d4bd19d08a69b5b170ea381a248
 .redes-sociales {
     width: 20vw;
     display: flex;
@@ -328,11 +273,6 @@ p {
 .people {
     color: var(--rojo);
 }
-
-
-
-
-
 
 .contenido-principal {
     width: 100vw;
