@@ -28,6 +28,9 @@ h6 {
 }
 
 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     list-style-type: none;
 }
 
@@ -46,12 +49,6 @@ nav {
     display: flex;
 }
 
-ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 h1 {
     font-family: var(--fuente-secundaria);
     font-weight: 400;
@@ -59,6 +56,7 @@ h1 {
     font-size: 5vw;
     line-height: 1;
 }
+
 h1+p {
     color: var(--blanco);
 }
@@ -75,7 +73,13 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    background-color: var(--rojo-oscuro);
+    background-color: var(--negro);
+}
+
+footer>h3 {
+    color: var(--blanco);
+    font-family: var(--fuente-secundaria);
+    font-size: 3rem;
 }
 
 address {
@@ -84,36 +88,30 @@ address {
 }
 
 header {
-    /**/
     height: 12vh;
     display: flex;
     background-color: var(--rojo);
 }
 
 .logo {
-    /**/
     width: 100px;
     height: 100px;
 }
 
 .titulo-cabecera {
-    /**/
     display: flex;
     align-items: center;
 }
 
 .barra-navegacion {
-    /**/
     width: 60vw;
 }
 
 .espaciado {
-    /**/
     margin: 1rem;
 }
 
 .centrar-logo {
-    /**/
     width: 20vw;
     display: flex;
     justify-content: center;
@@ -121,22 +119,20 @@ header {
 }
 
 .portada-principal {
-    /**/
     display: flex;
     width: 100vw;
     height: 85vh;
 }
 
 .portada-izq {
-    /**/
     width: 40vw;
     background-color: var(--rojo);
     padding: 4rem;
 }
 
 .portada-drch {
-    /**/
     width: 60vw;
+    background-image: url(../images/portada-pizza.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -146,7 +142,6 @@ header {
 }
 
 h1+p {
-    /**/
     margin-bottom: 2rem;
 }
 
@@ -183,7 +178,7 @@ h1+p {
 
 .tarjeta-arriba {
     width: 9rem;
-    margin: 0 0 0 .7rem;
+    margin-left: .7rem;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -199,6 +194,8 @@ h1+p {
 }
 
 .carta {
+    max-height: 60vh;
+    max-width: 33.3%;
     height: 60vh;
     justify-content: center;
     align-items: center;
@@ -216,7 +213,7 @@ h1+p {
 .carta>p {
     text-align: center;
     font-family: var(--fuente-principal);
-    margin: 0 8rem 0 8rem;
+    margin: 0 8rem;
 }
 
 .precio {
@@ -228,19 +225,70 @@ h1+p {
 }
 
 .anuncio {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image: url(../images/Pizza-anuncio.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3),
+                0px -5px 20px rgba(0, 0, 0, 0.3);
 }
 
-.order-now {
-    padding: 1rem;
+.anuncio>p {
+    color: var(--blanco);
+    font-family: var(--fuente-principal);
+}
+
+.anuncio>h3 {
+    margin: 1rem 0;
+    color: var(--blanco);
+    font-family: var(--fuente-principal);
+}
+
+.boton-secundario {
+    margin-top: 1rem;
+    padding: 1rem 3rem;
     border-radius: .1rem;
+    display: flex;
+    align-items: center;
     background-color: var(--rojo);
     color: var(--blanco);
+    border: none;
+    cursor: pointer;
+    transition: 0.4s ease;
 }
 
+.boton-secundario:hover {
+    background-color: var(--rojo-oscuro);
+}
 
+.servicios {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
 
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
+.servicio>img {
+    width: 4rem;
+
+}
+
+.servicio>p {
+    margin: 1rem;
+}
 
 .redes-sociales {
     width: 20vw;
@@ -250,10 +298,22 @@ h1+p {
 }
 
 .icono {
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     margin: .5rem;
     cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.icono:hover {
+    width: 40px;
+    height: 40px;
+
+}
+
+.icono-ubicacion {
+    width: 20px;
+    height: 20px;
 }
 
 .boton {
