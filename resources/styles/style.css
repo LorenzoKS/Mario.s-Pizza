@@ -191,6 +191,7 @@ h1+p {
 
 .menu {
     display: flex;
+    height: 70vh;
 }
 
 .carta {
@@ -213,7 +214,7 @@ h1+p {
 .carta>p {
     text-align: center;
     font-family: var(--fuente-principal);
-    margin: 0 8rem;
+    margin: 0 3rem;
 }
 
 .precio {
@@ -235,7 +236,7 @@ h1+p {
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3),
-                0px -5px 20px rgba(0, 0, 0, 0.3);
+        0px -5px 20px rgba(0, 0, 0, 0.3);
 }
 
 .anuncio>p {
@@ -330,4 +331,89 @@ h1+p {
     color: var(--negro);
 }
 
-@media only screen and (max-width: 767px) {}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .carta>img {
+        width: 15rem;
+        height: 15rem;
+    }
+    .carta>p {
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 22vh;
+    }
+    .portada-principal {
+        display: flex;
+        flex-direction: column;
+    }
+    .portada-izq {
+        width: 100vw;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .portada-izq>h1 {
+        font-size: 4rem;
+    }
+    .portada-drch {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .tarjetas {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+    .tarjeta {
+        width: 80vw;
+        height: 38vh;
+    }
+    .tarjeta>img {
+        width: 26rem;
+        height: 17rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+    
+    .tarjeta-arriba {
+        width: 7rem;
+        height: 5rem;
+        margin-left: .7rem;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    .tarjeta-abajo {
+        width: 15rem;
+        height: 11rem;
+        margin: .7rem 0 0 .7rem;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .carta {
+        width: 90%;
+        margin: 0 auto;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+    .carta>img {
+        width: 100%;
+        height: auto;
+    }
+    .carta>p {
+        display: none;
+    }
+}
