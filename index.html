@@ -14,7 +14,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&display=swap" rel="stylesheet">
-    <h2>hola</h2>
 </head>
 
 <body>
@@ -22,30 +21,20 @@
         <a href="index.html" class="centrar-logo">
             <img src="resources/images/Mario_sPIZZA.webp" alt="Logo Mario's PIZZA" class="logo">
         </a>
-        <h2 class="titulo">Mario's Pizza</h2>
+        <h2 class="titulo-cabecera">Mario's Pizza</h2>
         <nav>
-            <ul class="menu-principal">
-                <li class="espaciado inicio"><a href="#">Inicio</a></li>
-                <li class="espaciado"><a href="public/menu.html">Menu</a></li>
-                <li class="espaciado"><a href="public/galeria.html">Galeria</a></li>
-                <li class="espaciado"><a href="public/reservas.html">Reserva</a></li>
-                <li class="espaciado ubicacion"><a href="public/ubicacion.html">Ubicacion</a></li>
-            </ul>
-        </nav>
-        <nav>
-            <ul class="menu-secundario">
-                <li><a href="https://instagram.com"><img src="resources/images/instagram.png" alt="Instagram"
-                            class="icono"></a></li>
-                <li><a href="https://twitter.com"><img src="resources/images/twitter.png" alt="Twitter"
-                            class="icono"></a></li>
-                <li><a href="ubicacion.html"><img src="resources/images/ubicacion.png" alt="Icono ubicacion"
-                            class="icono"></a></li>
+            <ul class="barra-navegacion">
+                <li class="espaciado"><a href="#">Inicio</a></li>
+                <li class="espaciado"><a href="public/menu.html">Menú</a></li>
+                <li class="espaciado"><a href="public/galeria.html">Galería</a></li>
+                <li class="espaciado"><a href="public/reservas.html">Reservar</a></li>
+                <li class="espaciado"><a href="public/ubicacion.html">Ubicación</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="portada">
-            <div class="img-izq">
+        <div class="portada-principal">
+            <div class="portada-izq">
                 <h1>
                     THE<span class="great">GREAT </span><span class="good">GOOD</span>PIZZA <span
                         class="in">IN</span><span>TOWN</span>
@@ -58,8 +47,53 @@
                     Reserva Ya
                 </button>
             </div>
-            <div class="img-drch">
+            <img src="resources/images/portada-pizza.webp" alt="" class="portada-drch">
+        </div>
+
+        <div class="tarjeta">
+            <img src="resources/images/Promo-Pizza.webp" alt="Promo Pizza">
+            <div class="column">
+                <div>
+                    <img src="resources/images/Fries-French.webp" alt="Fries French" class="tarjeta-arriba">
+                    <img src="resources/images/Coffee-Caramel.webp" alt="Coffee Caramel" class="tarjeta-arriba">
+                </div>
+                <img src="resources/images/Comiendo-Pizza.webp" alt="Comiendo Pizza" class="tarjeta-abajo">
             </div>
+        </div>
+
+        <div class="menu">
+            <div class="carta column">
+                <img src="resources/images/Pizza-1.webp" alt="Pizza 1">
+                <h3>Supreme Pizza</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, nihil, dolores, sunt ullam at
+                    eveniet quam earum dolore laborum libero modi quasi corporis adipisci distinctio temporibus eos
+                    quidem ipsum reprehenderit.</p>
+                <p class="precio">$15.50</p>
+            </div>
+            <div class="carta column">
+                <img src="resources/images/Pizza-2.webp" alt="Pizza 2">
+                <h3>Vegge Lover</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, nihil, dolores, sunt ullam at
+                    eveniet quam earum dolore laborum libero modi quasi corporis adipisci distinctio temporibus eos
+                    quidem ipsum reprehenderit.</p>
+                <p class="precio">$15.50</p>
+            </div>
+            <div class="carta column">
+                <img src="resources/images/Pizza-3.webp" alt="Pizza 3">
+                <h3>Primo Meat</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, nihil, dolores, sunt ullam at
+                    eveniet quam earum dolore laborum libero modi quasi corporis adipisci distinctio temporibus eos
+                    quidem ipsum reprehenderit.</p>
+                <p class="precio">$15.50</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="anuncio">
+            <p>-------FREE DELIVERY WITH>-------</p>
+            <h3>PIZZA OF THE DAY</h3>
+            <p>$9.99</p>
+            <button class="order-now">Order Now</button>
         </div>
     </main>
     <footer>

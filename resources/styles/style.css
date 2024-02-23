@@ -7,6 +7,8 @@
     --dorado: #FFD700;
     --gris: #808080;
     --negro: #222222;
+    --fuente-principal: "Open Sans", sans-serif;
+    --fuente-secundaria: "Bebas Neue", sans-serif;
 }
 
 * {
@@ -17,25 +19,12 @@
 
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
     color: var(--blanco);
-    font-family: "Open Sans", sans-serif;
+    font-family: var(--fuente-principal);
     font-weight: 600;
-}
-
-.espaciado {
-    margin: 1rem;
-}
-
-header {
-    height: 15vh;
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--rojo);
-    border-bottom: 10px solid var(--rojo-oscuro);
 }
 
 ul {
@@ -45,12 +34,12 @@ ul {
 a {
     color: var(--blanco);
     text-decoration: none;
-    font-family: "Open Sans", sans-serif;
+    font-family: var(--fuente-principal);
     font-weight: 300;
 }
 
 p {
-    color: var(--blanco);
+    color: var(--negro);
 }
 
 nav {
@@ -64,11 +53,14 @@ ul {
 }
 
 h1 {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: var(--fuente-secundaria);
     font-weight: 400;
     font-style: normal;
     font-size: 5vw;
     line-height: 1;
+}
+h1+p {
+    color: var(--blanco);
 }
 
 span {
@@ -91,26 +83,170 @@ address {
     color: var(--blanco);
 }
 
+header {
+    /**/
+    height: 12vh;
+    display: flex;
+    background-color: var(--rojo);
+}
+
+.logo {
+    /**/
+    width: 100px;
+    height: 100px;
+}
+
+.titulo-cabecera {
+    /**/
+    display: flex;
+    align-items: center;
+}
+
+.barra-navegacion {
+    /**/
+    width: 60vw;
+}
+
+.espaciado {
+    /**/
+    margin: 1rem;
+}
+
 .centrar-logo {
+    /**/
     width: 20vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.logo {
-    width: 125px;
-    height: 125px;
+.portada-principal {
+    /**/
+    display: flex;
+    width: 100vw;
+    height: 85vh;
 }
 
-.menu-principal {
+.portada-izq {
+    /**/
+    width: 40vw;
+    background-color: var(--rojo);
+    padding: 4rem;
+}
+
+.portada-drch {
+    /**/
     width: 60vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: -5px 0 5px -5px rgba(0, 0, 0, 0.5),
+        0 -5px 5px -5px rgba(0, 0, 0, 0.5),
+        0 5px 5px -5px rgba(0, 0, 0, 0.5);
+}
+
+h1+p {
+    /**/
+    margin-bottom: 2rem;
+}
+
+.great {
+    color: var(--dorado);
+}
+
+.good {
+    color: var(--negro);
+}
+
+.in {
+    color: var(--gris);
+}
+
+.tarjeta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta>img {
+    width: 30rem;
+    height: 21rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.tarjeta-arriba {
+    width: 9rem;
+    margin: 0 0 0 .7rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta-abajo {
+    width: 19rem;
+    height: 11rem;
+    margin: .7rem 0 0 .7rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+    display: flex;
+}
+
+.carta {
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.carta>img {
+    width: 18rem;
+}
+
+.carta>h3 {
+    font-family: var(--fuente-principal);
+    margin: 1rem 0 .5rem 0;
+}
+
+.carta>p {
+    text-align: center;
+    font-family: var(--fuente-principal);
+    margin: 0 8rem 0 8rem;
+}
+
+.precio {
+    padding: .5rem;
+    border-radius: .1rem;
+    font-weight: 700;
+    background-color: var(--dorado);
+    color: var(--blanco);
+}
+
+.anuncio {
+    background-image: url(../images/Pizza-anuncio.png);
+}
+
+.order-now {
+    padding: 1rem;
+    border-radius: .1rem;
+    background-color: var(--rojo);
+    color: var(--blanco);
 }
 
 
-.menu-secundario {
-    min-width: 20vw;
-    justify-content: center;
+
+
+
+.redes-sociales {
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .icono {
@@ -118,15 +254,6 @@ address {
     height: 25px;
     margin: .5rem;
     cursor: pointer;
-}
-
-.titulo {
-    display: flex;
-    align-items: center;
-}
-
-.ubicacion {
-    display: none;
 }
 
 .boton {
@@ -143,179 +270,4 @@ address {
     color: var(--negro);
 }
 
-.portada {
-    display: flex;
-    width: 100vw;
-    height: 85vh;
-}
-
-.img-izq {
-    width: 40vw;
-    max-width: 40vw;
-    background-color: var(--rojo);
-    padding: 4rem;
-}
-
-.img-drch {
-    background-image: url(../images/pizza.jpg);
-    width: 60vw;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
-.great {
-    color: var(--dorado);
-}
-
-.good {
-    color: var(--negro);
-}
-
-.in {
-    color: var(--gris);
-}
-
-.mario {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2rem;
-    color: var(--dorado);
-}
-
-.redes-sociales {
-    width: 20vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.titulo-anuncio {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 5rem;
-    line-height: 1;
-    margin-bottom: 1rem;
-}
-
-.giant {
-    color: var(--dorado);
-}
-
-.promos {
-    color: var(--rojo);
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.seccion-secundaria {
-    display: flex;
-    justify-content: center;
-    padding-top: 3rem;
-    background-color: var(--azul-oscuro);
-    font-size: 3rem;
-}
-
-.portada-uno {
-    width: 30vw;
-    height: 22rem;
-    margin-right: 8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 3rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/portada-1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: .2rem solid var(--rojo);
-}
-
-.portada-dos {
-    width: 30vw;
-    height: 22rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 3rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/portada-2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: .2rem solid var(--rojo);
-}
-
-.portada-uno>p {
-    font-size: 1rem;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-}
-
-.portada-dos>p {
-    font-size: 1.2rem;
-    font-size: 1rem;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-}
-
-.pizza {
-    color: var(--rojo);
-}
-
-.good-dos {
-    color: var(--dorado);
-}
-
-.people {
-    color: var(--rojo);
-}
-
-.contenido-principal {
-    width: 100vw;
-    height: 50vh;
-}
-
-.anuncio-uno {
-    width: 25%;
-    height: 13rem;
-    background-image: url(../images/anuncio-uno.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.anuncio-dos {
-    width: 10rem;
-    height: 10rem;
-    background-image: url(../images/anuncio-dos.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.anuncio-tres {
-    width: 10rem;
-    height: 10rem;
-    background-image: url(../images/anuncio-tres.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.anuncio-cuatro {
-    width: 10rem;
-    height: 13rem;
-    background-image: url(../images/anuncio-cuatro.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    flex-grow: 1;
-}
-
-@media only screen and (max-width: 767px) {
-
-}
+@media only screen and (max-width: 767px) {}
