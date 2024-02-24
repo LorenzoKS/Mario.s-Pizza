@@ -69,6 +69,160 @@ span {
     font-style: normal;
 }
 
+.portada-principal {
+    display: flex;
+    width: 100vw;
+    height: 85vh;
+}
+
+.portada-izq {
+    width: 40vw;
+    background-color: var(--rojo);
+    padding: 4rem;
+}
+
+.portada-drch {
+    width: 60vw;
+    background-image: url(../images/portada-pizza.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: -5px 0 5px -5px rgba(0, 0, 0, 0.5),
+        0 -5px 5px -5px rgba(0, 0, 0, 0.5),
+        0 5px 5px -5px rgba(0, 0, 0, 0.5);
+}
+
+h1+p {
+    margin-bottom: 2rem;
+}
+
+.great {
+    color: var(--dorado);
+}
+
+.good {
+    color: var(--negro);
+}
+
+.in {
+    color: var(--gris);
+}
+
+.tarjetas {
+    display: flex;
+}
+
+.tarjetas>div {
+    width: 50vw;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.tarjetas>div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.tarjeta-uno>p {
+    z-index: 1;
+    color: var(--blanco);
+    font-family: var(--fuente-principal);
+}
+
+.tarjeta-dos>p {
+    z-index: 1;
+    color: var(--blanco);
+    font-family: var(--fuente-principal);
+}
+
+.tarjeta-uno {
+    background-image: url(../images/long-pizza.jpg);
+}
+
+.tarjeta-dos {
+    background-image: url(../images/roll-pizza.jpg);
+}
+
+.recuadro-uno {
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+}
+
+.recuadro-uno-primario {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/galeria/pizza-tomate.jpg);
+    position: relative;
+}
+
+.recuadro-uno-primario::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.recuadro-uno-primario>button {
+    z-index: 1;
+}
+
+.recuadro-uno-primario-dos {
+    width: 25vw;
+    background-image: url(../images/galeria/pizza-pimiento.jpg);
+}
+
+.recuadro-uno-secundario {
+    width: 25vw;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--negro);
+}
+
+.recuadro-uno-secundario>p {
+    margin-bottom: 2rem;
+    color: var(--blanco);
+    font-family: var(--fuente-principal);
+    font-weight: 600;
+}
+
+.recuadro-uno-secundario>h3 {
+    margin-bottom: 1rem;
+    color: var(--blanco);
+    font-family: var(--fuente-principal);
+    font-weight: 900;
+}
+
+.recuadro-dos-primario {
+    width: 25vw;
+    background-image: url(../images/galeria/pizza-peperoni.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.recuadro-dos-primario-dos {
+    width: 25vw;
+    background-image: url(../images/galeria/pizza-margarita.jpg);
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -169,4 +323,49 @@ address {
 
 .boton-secundario:hover {
     background-color: var(--rojo-oscuro);
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 22vh;
+    }
+
+    .portada-principal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portada-izq {
+        width: 100vw;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portada-izq>h1 {
+        font-size: 4rem;
+    }
+
+    .portada-drch {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .recuadro-uno {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recuadro-uno>div {
+        width: 100vw;
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+    }
 }
