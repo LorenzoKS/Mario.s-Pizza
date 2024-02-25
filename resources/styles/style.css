@@ -85,8 +85,12 @@ address {
     color: var(--blanco);
 }
 
+main {
+    overflow-x: hidden;
+}
+
 header {
-    height: 12vh;
+    height: 15vh;
     display: flex;
     background-color: var(--rojo);
 }

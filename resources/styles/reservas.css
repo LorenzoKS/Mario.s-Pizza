@@ -249,5 +249,40 @@ main {
     justify-content: space-between;
     background: url(../images/pizza-margarita.jpg) no-repeat;
     background-size: cover;
+    background-position: center;
+    position: relative;
     overflow-x: hidden;
+}
+
+main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+main > * {
+    z-index: 1;
+}
+
+aside > nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjetaMenu {
+    padding: 1em;
+}
+
+.tarjetaMenu > p {
+    max-width: 5em;
+    font-size: small;
+}
+
+.tarjetaMenu > img {
+    height: 10vh;
+    width: 5vw;
 }

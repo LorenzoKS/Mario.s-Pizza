@@ -1,8 +1,6 @@
 :root {
     --rojo: #DC0000;
     --rojo-oscuro: #780206;
-    --azul: #0550FF;
-    --azul-oscuro: #0000C8;
     --blanco: #FFFFFF;
     --dorado: #FFD700;
     --gris: #808080;
@@ -15,12 +13,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-header {
-    height: 12vh;
-    display: flex;
-    background-color: var(--rojo);
 }
 
 h1,
@@ -45,6 +37,10 @@ a {
     text-decoration: none;
     font-family: var(--fuente-principal);
     font-weight: 300;
+}
+
+p {
+    color: var(--negro);
 }
 
 nav {
@@ -89,8 +85,12 @@ address {
     color: var(--blanco);
 }
 
+main {
+    overflow-x: hidden;
+}
+
 header {
-    height: 12vh;
+    height: 15vh;
     display: flex;
     background-color: var(--rojo);
 }
