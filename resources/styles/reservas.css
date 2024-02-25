@@ -189,23 +189,49 @@ form {
     justify-content: space-evenly;
     padding: 2em;
     border: #780206 solid 0.8em;
-    border-radius: 50px;
+    border-radius: 30px;
     background-color: #FFFFFF;
     font-family: "Open Sans", sans-serif;
+}
 
+label {
+    padding-right: 1em;
+}
+
+input {
+    min-width: 2em;
 }
 
 .menu {
     width: 25vw;
     min-height: 70vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
     padding: 2em;
     border: var(--azul-oscuro) solid 0.8em;
     border-right: 0;
     border-radius: 50px 0 0 50px;
     background-color: #FFFFFF;
     font-family: "Open Sans", sans-serif;
+    transform: translateX(300px);
+    transition: 1s;
+}
+
+.menu:hover {
+    transform: translateX(0);
+}
+
+.vertical {
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    text-align: center;
+    margin-right: 1.1em;
+}
+
+span {
+    height: 70vh;
+    border-left: 0.3em solid var(--azul-oscuro);
 }
 
 div {
@@ -217,9 +243,10 @@ div {
 
 main {
     min-height: 85vh;
-    
+    padding-left: 33vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: var(--azul);
+    overflow-x: hidden;
 }
