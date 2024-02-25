@@ -209,3 +209,7 @@ h1+p {
 .boton-secundario:hover {
     background-color: var(--rojo-oscuro);
 }
+
+section > div {
+    font-family: var(--fuente-principal);
+}
