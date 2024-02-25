@@ -1,8 +1,6 @@
 :root {
     --rojo: #DC0000;
     --rojo-oscuro: #780206;
-    --azul: #0550FF;
-    --azul-oscuro: #0000C8;
     --blanco: #FFFFFF;
     --dorado: #FFD700;
     --gris: #808080;
@@ -320,7 +318,7 @@ h1+p {
 .boton {
     background-color: transparent;
     border: .1rem solid var(--dorado);
-    color: var(--dorado);
+    color: var(--blanco);
     padding: .5rem;
     border-radius: .1rem;
     transition: 0.4s ease;
