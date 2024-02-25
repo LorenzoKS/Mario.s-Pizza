@@ -114,6 +114,46 @@ address {
     align-items: center;
 }
 
+
+.portada-principal {
+    display: flex;
+    width: 100vw;
+    height: 85vh;
+}
+
+.portada-izq {
+    width: 40vw;
+    background-color: var(--rojo);
+    padding: 4rem;
+}
+
+.portada-drch {
+    width: 60vw;
+    background-image: url(../images/portada-pizza.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: -5px 0 5px -5px rgba(0, 0, 0, 0.5),
+        0 -5px 5px -5px rgba(0, 0, 0, 0.5),
+        0 5px 5px -5px rgba(0, 0, 0, 0.5);
+}
+
+h1+p {
+    margin-bottom: 2rem;
+}
+
+.great {
+    color: var(--dorado);
+}
+
+.good {
+    color: var(--negro);
+}
+
+.in {
+    color: var(--gris);
+}
+
 .redes-sociales {
     width: 20vw;
     display: flex;
@@ -132,7 +172,6 @@ address {
 .icono:hover {
     width: 40px;
     height: 40px;
-
 }
 
 .icono-ubicacion {

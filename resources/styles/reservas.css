@@ -188,9 +188,9 @@ form {
     flex-direction: column;
     justify-content: space-evenly;
     padding: 2em;
-    border: #780206 solid 0.8em;
+    border: var(--rojo-oscuro) solid 0.8em;
     border-radius: 30px;
-    background-color: #FFFFFF;
+    background-color: var(--blanco);
     font-family: "Open Sans", sans-serif;
 }
 
@@ -203,7 +203,7 @@ input {
 }
 
 .menu {
-    width: 25vw;
+    width: 30vw;
     min-height: 70vh;
     display: flex;
     flex-direction: row;
@@ -212,9 +212,9 @@ input {
     border: var(--azul-oscuro) solid 0.8em;
     border-right: 0;
     border-radius: 50px 0 0 50px;
-    background-color: #FFFFFF;
+    background-color: var(--blanco);
     font-family: "Open Sans", sans-serif;
-    transform: translateX(300px);
+    transform: translateX(25vw);
     transition: 1s;
 }
 
@@ -226,7 +226,7 @@ input {
     writing-mode: tb-rl;
     transform: rotate(-180deg);
     text-align: center;
-    margin-right: 1.1em;
+    margin-right: 2em;
 }
 
 span {
@@ -247,6 +247,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--azul);
+    background: url(../images/pizza-margarita.jpg) no-repeat;
+    background-size: cover;
     overflow-x: hidden;
 }
