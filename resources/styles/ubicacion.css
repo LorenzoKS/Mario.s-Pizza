@@ -255,7 +255,7 @@ div>iframe {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 22vh;
+        height: 25vh;
     }
     .portada-principal {
         display: flex;
@@ -263,7 +263,7 @@ div>iframe {
     }
     .portada-izq {
         width: 100vw;
-        height: 40vh;
+        height: 50vh;
         display: flex;
         flex-direction: column;
         justify-content: center;

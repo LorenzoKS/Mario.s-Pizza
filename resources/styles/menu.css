@@ -245,3 +245,61 @@ main {
     height: 45vh;
     width: 23vw;
 }
+
+@media only screen and (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 25vh;
+    }
+    .portada-principal {
+        display: flex;
+        flex-direction: column;
+    }
+    .portada-izq {
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .portada-izq>h1 {
+        font-size: 4rem;
+    }
+    .portada-drch {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menus {
+        margin: 0 6em;
+        padding: 1em;
+    }
+
+    .menus > section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cartaMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cartaMenu > p {
+        max-width: 60vw;
+    }
+
+    .cartaMenu > img {
+        height: 20vh;
+        width: 25vw;
+    }
+}

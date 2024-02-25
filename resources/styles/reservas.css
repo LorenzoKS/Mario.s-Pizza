@@ -171,16 +171,6 @@ address {
     background-color: var(--rojo-oscuro);
 }
 
-@media only screen and (max-width: 767px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-} 
-
 form {
     width: 35vw;
     min-height: 55vh;
@@ -285,4 +275,53 @@ aside > nav {
 .tarjetaMenu > img {
     height: 10vh;
     width: 5vw;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 25vh;
+    }
+
+    main  {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-left: 0;
+    }
+    
+    .menu {
+        width: 70vw;
+        transform: translateX(0);
+        transition: 0s;
+        margin: 2em;
+        border-right: solid var(--azul-oscuro) 0.8em;
+        border-radius: 25px;
+    }
+
+    .vertical, .menu > span {
+        display: none;
+    }
+
+    .tarjetaMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjetaMenu > p {
+        font-size: large;
+        max-width: 50vw;
+        margin-bottom: 1em;
+    }
+
+    .tarjetaMenu > img {
+        height: 20vh;
+        width: 30vw;
+    }
+
+    form {
+        width: 70vw;
+    }
 }
